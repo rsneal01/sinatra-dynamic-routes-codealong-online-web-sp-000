@@ -23,7 +23,7 @@ class App < Sinatra::Base
   end
   
   get '/multiply/:num1/:num2' do
-    params[:id]
+    <%= params[:num1] * params[:num2] %>
     end.first
   erb :'/multiply/show.html'
 end
