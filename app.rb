@@ -22,6 +22,10 @@ class App < Sinatra::Base
     "Hello #{@user_name}!"
   end
   
-  
+  get '/multiply/:num1/:num2' do
+    params[:id]
+    end.first
+  erb :'/multiply/show.html'
+end
 
 end
